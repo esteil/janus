@@ -144,6 +144,7 @@ vim_plugin_task "autoclose",        "git://github.com/vim-scripts/AutoClose.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
 vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
+vim_plugin_task "session",          "http://www.vim.org/scripts/download_script.php?src_id=13722"
 
 vim_plugin_task "rename" do
   sh "curl http://www.vim.org/scripts/download_script.php?src_id=7262 > plugin/rename.vim"
