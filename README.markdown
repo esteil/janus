@@ -20,7 +20,7 @@ report an issue to the issue tracker.
 
 ## Installation
 
-0. `for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old;
+0. `for i in ~/.vim ~/.vimrc ~/.gvimrc ~/.vimrc.local ~/.gvimrc.local; do [ -e $i ] && mv $i $i.old;
    done`
 1. `git clone git://github.com/esteil/janus.git ~/.vim`
 2. `cd ~/.vim`
