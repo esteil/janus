@@ -1,5 +1,8 @@
 set nocompatible
 
+" Set mapleader to comma (instead of backslash)
+let mapleader=","
+
 set number
 set ruler
 syntax on
