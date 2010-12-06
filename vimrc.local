@@ -1,3 +1,11 @@
 " Add Git info to status line
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
+" Some extra files to ignore for command-t and autocomplete
+set wildignore+=public/photo*/**
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=vendor/cache/**
+set wildignore+=solr/**
+set wildignore+=dump/**
+
