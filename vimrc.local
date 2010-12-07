@@ -9,3 +9,8 @@ set wildignore+=vendor/cache/**
 set wildignore+=solr/**
 set wildignore+=dump/**
 
+" Make Command-t open in new tabs on enter, and same tab with C-T
+" this inverts the behavior
+let g:CommandTAcceptSelectionMap='<C-t>'
+let g:CommandTAcceptSelectionTabMap='<CR>'
+
