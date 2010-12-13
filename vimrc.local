@@ -14,3 +14,7 @@ set wildignore+=dump/**
 let g:CommandTAcceptSelectionMap='<C-t>'
 let g:CommandTAcceptSelectionTabMap='<CR>'
 
+" Sort tags by name
+let Tlist_Sort_Type = "name"
+let Tlist_WinWidth = 40
+
