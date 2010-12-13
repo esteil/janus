@@ -28,3 +28,5 @@ map <Leader>ga :Gcommit -a<CR>
 " Refresh command-t api
 map <Leader>tr :CommandTFlush<CR>
 
+" Automatically refresh command-t when VIM gains focus
+autocmd FocusGained * :CommandTFlush
