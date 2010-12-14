@@ -6,3 +6,7 @@ set foldmethod=syntax
 
 " Enable a fold column
 set foldcolumn=1
+
+" Don't fold stuff by default
+set foldlevelstart=99
+
