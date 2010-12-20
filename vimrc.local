@@ -30,3 +30,7 @@ map <Leader>tr :CommandTFlush<CR>
 
 " Automatically refresh command-t when VIM gains focus
 autocmd FocusGained * :CommandTFlush
+
+" Wrapping on
+set wrap
+
