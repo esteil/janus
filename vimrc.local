@@ -21,6 +21,7 @@ let Tlist_WinWidth = 40
 " Git shortcuts
 "  <Leader>gc -> git commit
 "  <Leader>gs -> git status
+"  <Leader>ga -> git commit -a
 map <Leader>gc :Gcommit<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>ga :Gcommit -a<CR>
