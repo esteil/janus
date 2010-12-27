@@ -37,3 +37,6 @@ set wrap
 " Auto-save open sessions
 let g:session_autosave = 1
 
+" Put a space after comment start
+let NERDSpaceDelims = 1
+
