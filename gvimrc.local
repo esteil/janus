@@ -1,9 +1,6 @@
 set guifont=Menlo\ Regular:h12
 colorscheme railscasts
 
-" Enable folding
-set foldmethod=syntax
-
 " Enable a fold column
 set foldcolumn=1
 
