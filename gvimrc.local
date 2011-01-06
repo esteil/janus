@@ -7,3 +7,9 @@ set foldcolumn=1
 " Don't fold stuff by default
 set foldlevelstart=99
 
+if has("gui_macvim")
+  " Make Cmd-Shift-T open a new tab, without the open file dialog
+  macmenu &File.New\ Tab key=<D-T>
+  macmenu &File.Open\ Tab\.\.\. key=<nop>
+end
+
