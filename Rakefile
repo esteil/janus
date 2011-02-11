@@ -151,6 +151,7 @@ vim_plugin_task "irblack",          "git://github.com/wgibbs/vim-irblack.git"
 vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.git"
 vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "session",          "http://www.vim.org/scripts/download_script.php?src_id=13722"
+vim_plugin_task "indent-guides",    "git://github.com/nathanaelkane/vim-indent-guides.git"
 
 vim_plugin_task "rename" do
   sh "curl http://www.vim.org/scripts/download_script.php?src_id=7262 > plugin/rename.vim"
