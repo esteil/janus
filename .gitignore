@@ -15,4 +15,5 @@ colors
 indent
 .VimballRecord
 sessions
+syntax_checkers
 
