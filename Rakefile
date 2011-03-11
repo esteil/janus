@@ -244,6 +244,17 @@ task :link_vimrc do
   end
 end
 
+desc "link ~/.vimsessions to ~/.vim/sessions"
+task :link_vimsessions do
+  session_dir = File.expand_path("~/.vimsessions")
+
+  mkdir_p(session_dir) unless File.exist?(session_dir)
+  dest = File.expand_path("../sessions", __FILE__)
+  unless File.exist?(dest)
+    ln_s(session_dir, dest)
+  end
+end
+
 task :clean do
   system "git clean -dfx"
 end
@@ -255,7 +266,8 @@ end
 
 task :default => [
   :update_docs,
-  :link_vimrc
+  :link_vimrc,
+  :link_vimsessions
 ]
 
 desc "Clear out all build artifacts and rebuild the latest Janus"
