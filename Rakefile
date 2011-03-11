@@ -217,6 +217,12 @@ vim_plugin_task "vwilight" do
   sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
 end
 
+vim_plugin_task 'json', "https://github.com/vim-scripts/JSON.vim.git" do
+  File.open(File.expand_path('../ftdetect/json.vim', __FILE__), 'w') do |file|
+    file << "au BufNewFile,BufRead *.json setf json"
+  end
+end
+
 desc "Update the documentation"
 task :update_docs do
   puts "Updating VIM Documentation..."
