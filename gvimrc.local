@@ -1,8 +1,9 @@
-set guifont=Menlo\ Regular:h12
-colorscheme railscasts
+"set guifont=Menlo\ Regular:h12
+set guifont=Inconsolata:h14
+colorscheme railscasts+
 
 " Highlight current line
-set cursorline
+" set cursorline
 
 " Enable a fold column
 set foldcolumn=1
