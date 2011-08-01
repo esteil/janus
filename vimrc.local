@@ -35,6 +35,10 @@ map <Leader>ga :Gcommit -a<CR>
 " Refresh command-t api
 map <Leader>tr :CommandTFlush<CR>
 
+" Hook up CommandTBuffer
+map <Leader>b :CommandTBuffer<CR>
+" map <Leader>j :LustyJuggler<CR>
+
 " Wrapping on
 set wrap
 
