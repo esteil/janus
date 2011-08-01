@@ -17,6 +17,9 @@ set wildignore+=db_dumps/**
 let g:CommandTAcceptSelectionMap='<C-t>'
 let g:CommandTAcceptSelectionTabMap='<CR>'
 
+" More files for command-t
+let g:CommandTMaxFiles=20000
+
 " Sort tags by name
 let Tlist_Sort_Type = "name"
 let Tlist_WinWidth = 40
