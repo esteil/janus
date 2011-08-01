@@ -8,6 +8,9 @@ set wildignore+=tmp/**
 set wildignore+=vendor/cache/**
 set wildignore+=solr/**
 set wildignore+=dump/**
+set wildignore+=wp-content/uploads/**
+set wildignore+=wp-content/themes/betanews/images/media/**
+set wildignore+=db_dumps/**
 
 " Make Command-t open in new tabs on enter, and same tab with C-T
 " this inverts the behavior
