@@ -158,6 +158,7 @@ vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
 vim_plugin_task "session",          "git://github.com/vim-scripts/session.vim--Odding.git"
 vim_plugin_task "indent-guides",    "git://github.com/nathanaelkane/vim-indent-guides.git"
 vim_plugin_task "rename",           "git://github.com/vim-scripts/Rename.git"
+vim_plugin_task 'easymotion',       'https://github.com/Lokaltog/vim-easymotion.git'
 
 # vim_plugin_task "rename" do
 #   sh "curl http://www.vim.org/scripts/download_script.php?src_id=7262 > plugin/rename.vim"
