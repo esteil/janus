@@ -58,3 +58,24 @@ augroup END
 
 " Make EasyMotion use the <Leader>m prefix
 let g:EasyMotion_leader_key = '<Leader>m'
+
+set hidden
+set ignorecase
+set smartcase
+
+map <silent> <Leader>s :silent :nohlsearch<CR>
+
+" Define a function to clear out any unloaded buffers
+function! CloseUnloadedBuffers()
+  let lastBuffer = bufnr('$')
+
+  let currentBuffer = 1
+  while currentBuffer <= lastBuffer
+    " If buffer exists, is shown in :ls output, and isn't loaded
+    if bufexists(currentBuffer) && buflisted(currentBuffer) && bufloaded(currentBuffer) == 0
+      execute 'bdelete' currentBuffer
+    endif
+
+    let currentBuffer = currentBuffer + 1
+  endwhile
+endfunction
